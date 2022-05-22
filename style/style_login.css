@@ -2,3 +2,79 @@
   margin: 0;
   padding: 0;
 }
+#body {
+  background: #F28555;
+}
+
+.login_box{
+  background-color: white;
+  width: 40%;
+  border: 2px solid black;
+  box-shadow: 50px 50px 8px black;
+  border-radius: 50px;
+  text-align: center;
+  margin: 100px auto;
+}
+.login_box_content{
+  margin: 60px;
+}
+.login_box_content button {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.login_box_copyright{
+  position: relative;
+  font-size: 14px;
+  top: 50px ;
+}
+#input {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+i.fa-solid.fa-circle-xmark {
+  color: black;
+  font-size: 35px;
+  position: relative;
+  bottom: 7vh;
+  left: 16vw;
+}
+i.fa-regular.fa-eye-slash {
+  font-size: 26px;
+  position: relative;
+  top: 6.4vh;
+  right: -8vw;
+}
+i.fa-solid.fa-lock {
+  font-size: 26px;
+  position: relative;
+  top: 6vh;
+  right: 15vw;
+}
+i.fa-regular.fa-envelope {
+  font-size: 26px;
+  position: relative;
+  right: 15.4vw;
+  top: 6vh;
+}
+
+.login_box_area span {
+  float: left;
+  font-size: 22px;
+  font-weight: 500;  
+}
+
+.login_box_content h2 {
+  font-size: 35px;
+}
