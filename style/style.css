@@ -144,7 +144,6 @@ div.about_bar {
 
 .grid img{
   width: 100px;
-  border: solid 2px;
 }
 .grid{
   position:relative;
@@ -158,7 +157,7 @@ div.about_bar {
 .grid div{
   justify-items: center;
   display: grid;
-  row-gap: 30px;
+  row-gap: 10px;
 }
   
 .grid_frontend{
@@ -172,18 +171,16 @@ div.about_bar {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
   width: 70%;
-  border: solid;
   justify-items: center;
 }
 
 .skills_2{
   position:relative;
-  top: -1200px;
+  top: -1190px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
   width: 70%;
-  border: solid;
   justify-items: center;
 }
 .lang h3{
@@ -406,6 +403,10 @@ div.projets_card{
   background-color: #282D29;
   padding: 25px;
 }
+.experience_card:hover {
+  transition: .5s;
+  transform:scale(1.040);  
+}
 .experience_card h4 {
   color: white; 
   font-size: 28px;
@@ -433,4 +434,153 @@ div.projets_card{
   color: white;
   text-align: center;
   top: -550px;
+}
+
+
+/*---------------------------Spinner---------------------------*/
+
+.skill {
+  height: 120px;
+}
+.outer{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  padding: 20px;
+}
+.inner{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#number{
+  color: #555;
+  font-weight: 600;
+}
+circle{
+  fill: none;
+  stroke: url(#GradientColor1);
+  stroke-width: 10px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+.rowOne{
+  position: absolute;
+  top: 25px;
+}
+.rowTwo{
+  position: absolute;
+  top: 155px;
+}
+.rowThree{
+  position: absolute;
+  top: 285px;
+}
+.mysql_progress {
+  position: absolute;
+  top: 220px;
+}
+.figma{
+  animation: figma 2s linear forwards;
+} 
+.postman{
+  animation: postman 2s linear forwards;
+} 
+.other{
+  animation: anim 2s linear forwards;
+}
+.github{
+  animation: github 2s linear forwards;
+}
+.angular{
+  animation: angular 2s linear forwards;
+}
+.bootstrap{
+  animation: bootstrap 2s linear forwards;
+}
+.jquery{
+  animation: jquery 2s linear forwards;
+}
+.javascript{
+  animation: javascript 2s linear forwards;
+}
+.css{
+  animation: css 2s linear forwards;
+}
+.html{
+  animation: html 2s linear forwards;
+}
+.java{
+  animation: java 2s linear forwards;
+}
+.mysql{
+  animation: mysql 2s linear forwards;
+}
+
+@keyframes mysql {
+  100%{
+      stroke-dashoffset: 270;
+  }
+}
+@keyframes java {
+  100%{
+      stroke-dashoffset: 379;
+  }
+}
+@keyframes figma {
+  100%{
+      stroke-dashoffset: 224;
+  }
+}
+@keyframes postman {
+  100%{
+      stroke-dashoffset: 255;
+  }
+}
+@keyframes github {
+  100%{
+      stroke-dashoffset: 270;
+  }
+}
+@keyframes angular {
+  100%{
+      stroke-dashoffset: 317;
+  }
+}
+@keyframes bootstrap {
+  100%{
+    stroke-dashoffset: 210;
+  }
+}
+@keyframes jquery {
+  100%{
+      stroke-dashoffset: 193;
+  }
+}
+@keyframes javascript {
+  100%{
+      stroke-dashoffset: 239;
+  }
+}
+@keyframes css {
+  100%{
+      stroke-dashoffset: 200;
+  }
+}
+@keyframes html {
+  100%{
+      stroke-dashoffset: 162;
+  }
+}
+
+@media screen and (max-width: 990px){
+  nav a img {
+    position: relative;
+    top: -35px;
+    transform: scale(0.7);
+}
+    
 }
