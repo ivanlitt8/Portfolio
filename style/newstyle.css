@@ -1,0 +1,596 @@
+  nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+    background-color:#3E3E3E;
+    height: 64px;
+    padding-left: 82px;
+    padding-right: 100px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+  }
+  nav.navbar.navbar-expand-lg.navbar.navbar-dark.bg-dark {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  #nav-p{
+    padding-right: 29px;
+  }
+  
+  .navbar-brand img{
+    width: 184px;
+  }
+  
+  #login{
+    margin-left: 80Px;
+  }
+    
+  a.nav-link {
+    font-size: 18px;
+  }
+    
+  body{
+    background: linear-gradient(180deg, #000000 0%, rgba(62, 62, 62, 0.941562) 29.17%, #3E3E3E 100%);
+  }
+  
+  .about_stack h2{
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 104px;
+    color: #868490;
+  }
+  .containerLanding{
+    height: 700px;
+    background-image: url(/resources/equis2.png);
+    background-repeat: no-repeat;
+    background-position: 350px -450px;
+    background-size: 1100px
+  }
+  .about{
+    width: 60%;
+    font-family: 'DM Sans';
+    padding-left: 100px;
+    padding-top: 70px;
+  }
+    
+  section div h1 {
+    font-size: 100px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: 0px;
+    width: 400px;
+    height: 100px;
+    margin-bottom: 0px;
+  }
+  section div p {
+    width: 60%;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+  .about_locate{
+    font-size: 20px;
+  }
+  
+  section div span {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+  i.fa-solid.fa-street-view {
+    color: #F76525;
+  }
+  .equis {
+    position: absolute;
+    left: 380px;
+    top: -180px;
+    width: 1000px;
+    z-index: -20;
+    transform: rotate(-15deg);
+  }
+    
+  button.navbar-toggler {
+    position: relative;
+    top: -35px;
+  }
+    
+  div.about_bar {
+    position: absolute;
+    width: 330px;
+    height: 8px;
+    top: 250px;
+    background: rgba(233, 111, 39, 0.4);
+  }
+  .miguel {
+    position: absolute;
+    top: 110px;
+    left: 750px;
+    height: 500px;
+  }
+    
+  .contact a{
+    text-decoration: none;
+    position: absolute;
+    top: 500px;
+    left: 380px;
+    color:white;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid #F76525;
+    text-align: center;
+    padding-top: 5px
+  }
+  
+  .contact a h4{
+    font-weight: 400;
+  }
+    
+  .wave svg{
+    position: relative;
+    top: -150px;
+  }
+  
+  .skills h3{
+    position: relative;
+    top: -1370px;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+  }
+  
+  .grid img{
+    width: 100px;
+  }
+  .grid{
+    position:relative;
+    top: -1400px;
+    margin: 0 auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+  .grid div{
+    justify-items: center;
+    display: grid;
+    row-gap: 10px;
+  }
+    
+  .grid_frontend{
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+  }
+  .skills_1{
+    position:relative;
+    top: -1350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 70%;
+    justify-items: center;
+  }
+  
+  .skills_2{
+    position:relative;
+    top: -1190px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 70%;
+    justify-items: center;
+  }
+  .lang h3{
+    position: relative;
+    top: -1350px;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+  }
+  
+  .lang_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    margin: 0 auto;
+    top: -1300px;
+    position: relative;
+  }
+  .lang_circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    left: 524px;
+    top: 2407px;
+    background: #FFFFFF;
+    display: flex;
+  }
+  .lang_circle h4 {
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+    color: #3E3E3E;
+  }
+  .lang_ {
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+  }
+  .lang_ h5 {
+    color: #F76525  ;
+  }
+  .projets_text {
+    top: -1100px;
+    position: relative;
+    text-align: center;
+  }
+  .projets_text span{
+    font-size: 16px;
+  }
+  .projets_text h3 {
+    color: white;
+    font-size: 40px;
+  }
+  .projets_text p {
+    width: 50%;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  .projets_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    gap: 20px;
+    position: relative;
+    top: -1055px;
+  }
+  
+  .projets_grid img {
+    width: 100%;
+    border-top-right-radius: 20%;
+  }
+  
+  div.projets_card{
+    background-color: #2D2C32;
+    height: 350px;
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 20%;
+  }
+  
+  .projets_card p {
+    font-size: 12px;
+    min-width: 100%;
+    position: relative;
+    top: -12px;
+  }
+  .projets_card_text{  
+    margin: 25px;
+    position: relative;
+    top: -15px;
+    height: 150px;
+  }
+  
+  .projets_card h4 {
+    color: #F76525;
+    position: relative;
+    top: -16px;
+    font-size: 20px;
+  }
+  
+  .projet_date {
+    background-color: black;
+    position: relative;
+    top: -186px;
+    font-size: 12px;
+    color: #F76525;
+    font-weight: 500;
+    padding: 4px 8px
+  }
+  .projets_card_text span{
+    color: #F76525;
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    top: -20px;  
+  }
+  .services h3{
+    position: relative;
+    top: -950px;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+  }
+  .services_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    gap: 20px;
+    position: relative;
+    top: -900px;
+  }
+  .service{
+    background-color: #2D2C32;
+    border-radius: 20px;
+    height: 300px;
+    text-align: center;
+    padding: 40px 0;
+  }
+  .service:hover{
+    transition-duration: .5s;
+    background-color: #292664;
+    box-shadow: 10px 10px;
+  }
+  .service i {
+    color: #F76525;
+    font-size: 80px;
+  }
+  .service h5{
+    padding-top: 24px;
+    font-size: 24px;
+    color: white;
+  }
+  .service p{
+    padding-top: 10px;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+  }
+  .education h3{
+    position: relative;
+    top: -750px;
+    font-size: 60px;
+    color: white;
+    margin-left: 10%;
+  }
+  .education_grid{
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  }
+  .education_grid img{
+    width: 100px;
+    height: auto;
+  }
+  .educations{
+    display: grid;
+    position: relative;
+    top: -700px;
+    align-items: center;
+    grid-template-columns: 25% 65%;
+    color: #F76525;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .education_data{
+    display: flex;
+    padding-top: 8px;
+    justify-content: space-between;
+  }
+  .education_data span{
+    font-weight: 400;
+  }
+  
+  .educations h4{
+    font-size: 20px;
+  }
+  .line{
+    position:absolute;
+    top: 3125px;
+    left: 10%;
+  }
+  .experience h3{
+    position: relative;
+    top: -600px;
+    font-size: 60px;
+    color: white;
+    margin-left: 10%;
+  }
+  .experience_grid{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    position: relative;
+    top: -600px;
+  }
+  
+  .experience_card {
+    background-color: #282D29;
+    padding: 25px;
+  }
+  .experience_card:hover {
+    transition: .5s;
+    transform:scale(1.040);  
+  }
+  .experience_card h4 {
+    color: white; 
+    font-size: 28px;
+  }
+  .experience_card p {
+    font-size: 16px;
+    width: 100%;
+  }
+  .experience_card span{
+    font-size: 18px;
+    font-weight: 500; 
+  }
+  .experience_place{
+    position: relative;
+    top: -5px;
+  }
+  .experience_text p{
+    position: relative;
+    top: -600px;
+    width: 65%;
+    color: white;
+    margin-left: 10%;
+  }
+  .copyright{
+    color: white;
+    text-align: center;
+    top: -550px;
+  }
+  
+  
+  /*---------------------------Spinner---------------------------*/
+  
+  .skill {
+    height: 120px;
+  }
+  .outer{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+  }
+  .inner{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #number{
+    color: #555;
+    font-weight: 600;
+  }
+  circle{
+    fill: none;
+    stroke: url(#GradientColor1);
+    stroke-width: 10px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+  }
+  .rowOne{
+    position: absolute;
+    top: 25px;
+  }
+  .rowTwo{
+    position: absolute;
+    top: 155px;
+  }
+  .rowThree{
+    position: absolute;
+    top: 285px;
+  }
+  .mysql_progress {
+    position: absolute;
+    top: 220px;
+  }
+  .figma{
+    animation: figma 2s linear forwards;
+  } 
+  .postman{
+    animation: postman 2s linear forwards;
+  } 
+  .other{
+    animation: anim 2s linear forwards;
+  }
+  .github{
+    animation: github 2s linear forwards;
+  }
+  .angular{
+    animation: angular 2s linear forwards;
+  }
+  .bootstrap{
+    animation: bootstrap 2s linear forwards;
+  }
+  .jquery{
+    animation: jquery 2s linear forwards;
+  }
+  .javascript{
+    animation: javascript 2s linear forwards;
+  }
+  .css{
+    animation: css 2s linear forwards;
+  }
+  .html{
+    animation: html 2s linear forwards;
+  }
+  .java{
+    animation: java 2s linear forwards;
+  }
+  .mysql{
+    animation: mysql 2s linear forwards;
+  }
+  
+@keyframes mysql {
+    100%{
+        stroke-dashoffset: 270;
+    }
+  }
+  @keyframes java {
+    100%{
+        stroke-dashoffset: 379;
+    }
+  }
+  @keyframes figma {
+    100%{
+        stroke-dashoffset: 224;
+    }
+  }
+  @keyframes postman {
+    100%{
+        stroke-dashoffset: 255;
+    }
+  }
+  @keyframes github {
+    100%{
+        stroke-dashoffset: 270;
+    }
+  }
+  @keyframes angular {
+    100%{
+        stroke-dashoffset: 317;
+    }
+  }
+  @keyframes bootstrap {
+    100%{
+      stroke-dashoffset: 210;
+    }
+  }
+  @keyframes jquery {
+    100%{
+        stroke-dashoffset: 193;
+    }
+  }
+  @keyframes javascript {
+    100%{
+        stroke-dashoffset: 239;
+    }
+  }
+  @keyframes css {
+    100%{
+        stroke-dashoffset: 200;
+    }
+  }
+  @keyframes html {
+    100%{
+        stroke-dashoffset: 162;
+    }
+  }
+  
+  @media screen and (max-width: 990px){
+    nav a img {
+      position: relative;
+      top: -35px;
+      transform: scale(0.7);
+    }
+    .navbar-nav{
+      position: fixed;
+      max-width: 400px;
+      width: 100%;
+      top: 700px;
+      bottom: 0;
+      right: 0;
+      background-color: #000000;
+      overflow-y: auto;
+      grid-auto-rows: max-content;
+    }
+    .nav-link{
+      padding: 25px 0;
+      padding-left: 30px;
+      height: auto;
+    }
+  }

@@ -518,7 +518,8 @@ circle{
 }
 .mysql{
   animation: mysql 2s linear forwards;
-}
+} 
+
 
 @keyframes mysql {
   100%{
@@ -575,12 +576,28 @@ circle{
       stroke-dashoffset: 162;
   }
 }
+ 
 
 @media screen and (max-width: 990px){
   nav a img {
     position: relative;
     top: -35px;
     transform: scale(0.7);
-}
-    
+  }
+  .navbar-nav{
+    position: fixed;
+    max-width: 400px;
+    width: 100%;
+    top: 700px;
+    bottom: 0;
+    right: 0;
+    background-color: #000000;
+    overflow-y: auto;
+    grid-auto-rows: max-content;
+  }
+  .nav-link{
+    padding: 25px 0;
+    padding-left: 30px;
+    height: auto;
+  }
 }
