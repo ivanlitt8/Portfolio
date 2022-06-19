@@ -67,7 +67,7 @@ body{
 }
 .containerLanding{
   height: 700px;
-  background-image: url(/resources/equis2.png);
+  background-image: url(/resources/equis.svg);
   background-repeat: no-repeat;
   background-position: 350px -450px;
   background-size: 1100px
