@@ -176,7 +176,7 @@ i.fa-solid.fa-street-view {
 }
 .grid{
   position:relative;
-  top: -1400px;
+  top: -1350px;
   margin: 0 auto;
   width: 70%;
   display: grid;
@@ -193,24 +193,13 @@ i.fa-solid.fa-street-view {
   grid-template-columns: 40% 40%;
   justify-content: center;
 }
-.skills_1{
-  position:relative;
-  top: -1350px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 auto;
-  width: 70%;
-  justify-items: center;
+.grid_backend {
+  position: absolute;
+  top: 50px;
 }
-
-.skills_2{
-  position:relative;
-  top: -1190px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 auto;
-  width: 70%;
-  justify-items: center;
+.grid_db {
+  position: absolute;
+  top: 240px;
 }
 .lang h3{
   position: relative;
@@ -498,19 +487,23 @@ circle{
 }
 .rowOne{
   position: absolute;
+  top: 75px;
+}
+.myjava_progress{
+  position: absolute;
   top: 25px;
 }
 .rowTwo{
   position: absolute;
-  top: 155px;
+  top: 200px;
 }
 .rowThree{
   position: absolute;
-  top: 285px;
+  top: 330px;
 }
 .mysql_progress {
   position: absolute;
-  top: 220px;
+  top: 25px; 
 }
 .figma{
   animation: figma 2s linear forwards;
@@ -624,6 +617,22 @@ circle{
   }  
 }
 @media screen and (max-width: 800px){
+  /*//////////////////////////////////////////REVISAR ESTO///////////////////////////////////////*/
+  .grid{
+    width: 100%;
+    transform: scale(0.8);
+    top: -1450px;
+  }
+  .skills_1 {
+    width: 85%;
+    top: -1420px;
+  }
+  .skills h3 {
+  font-size: 50px;
+  top: -1420px;
+  }
+/*///////////////////////////////////////////////////////////////////////////////////////////////////*/
+
   .lang_grid{
     width: 100%;
   }  
