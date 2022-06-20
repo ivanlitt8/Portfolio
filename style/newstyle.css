@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;1,300;1,700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 .menu{
   background-color: #212529;
   color: white;
   height: 64px;
-  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 18px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
 }
 .menu_container{
   display: flex;
@@ -24,20 +28,29 @@
   display: flex;
   height: 100%;
   transition: transform 1.5s;
+  margin: 0px;
 }
-
+.menu_link{
+  text-decoration: none;
+  color: #9B9D97;
+}
+.menu_link:hover {
+  color: orangered;
+  transform: scale(1.08);
+  transition: .2s;
+}
 .menu_item{
   list-style: none;
   position: relative;
   height: 100%;
-}
-.menu_item{
   color: white;
   text-decoration: none;
   padding: 0 30px;
   display: flex;
-  height: 100%;
   align-items: center;
+}
+.menu_item i{
+  margin-right: 20px;  
 }
 .menu_hamburguer{
   display: flex;
@@ -53,51 +66,56 @@
 }
 .menu_logo img{
   width: 184px;
+  margin-left: 10px;
 }
-  
+.wave img{
+  position: relative;
+  top: -169px;
+  width: 100%;
+}  
 body{
   background: linear-gradient(180deg, #000000 0%, rgba(62, 62, 62, 0.941562) 29.17%, #3E3E3E 100%);
-}
-
-.about_stack h2{
-  font-weight: 500;
-  font-size: 50px;
-  line-height: 104px;
-  color: #868490;
 }
 .containerLanding{
   height: 700px;
   background-image: url(/resources/equis.svg);
   background-repeat: no-repeat;
-  background-position: 350px -450px;
-  background-size: 1100px
+  background-size: 2000px;
+  background-position: left;
 }
 .about{
-  width: 60%;
+  position: absolute;
+  max-width: 800px;
   font-family: 'DM Sans';
   padding-left: 100px;
   padding-top: 70px;
+  margin: 50px 0px;
 }
-  
-section div h1 {
-  font-size: 100px;
-  line-height: 30px;
+.about_stack h2{
+  font-size: 50px;
+  color: #868490;
+  text-transform: uppercase;
+  line-height: 48px;
+}
+.about h1 {
+  margin-top: -23px;
+  font-size: 90px;
   color: #FFFFFF;
-  margin-top: 0px;
-  width: 400px;
-  height: 100px;
-  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
-section div p {
+.about p {
   width: 60%;
   font-size: 20px;
+  line-height: 30px;
   color: #FFFFFF;
 }
+
 .about_locate{
   font-size: 20px;
 }
 
-section div span {
+.about span {
   color: #FFFFFF;
   font-size: 18px;
   font-weight: 300;
@@ -106,54 +124,43 @@ section div span {
 i.fa-solid.fa-street-view {
   color: #F76525;
 }
-.equis {
-  position: absolute;
-  left: 380px;
-  top: -180px;
-  width: 1000px;
-  z-index: -20;
-  transform: rotate(-15deg);
-}
-  
-button.navbar-toggler {
+.about_bar {
   position: relative;
-  top: -35px;
-}
-  
-div.about_bar {
-  position: relative;
-  width: 330px;
-  height: 8px;
-  top: 250px;
+  top: -20px;
+  width: 380px;
+  height: 6px;
   background: rgba(233, 111, 39, 0.4);
 }
 .miguel {
   position: absolute;
   top: 110px;
-  left: 750px;
+  left: 65%;
   height: 500px;
 }
-  
+.contact {
+  position: absolute;
+  top: 410px;
+  left: 450px;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #868490;
+  text-align: center;
+}
+.contact h4{
+  color: white;
+  margin: 5px;
+  font-weight: 100;
+}
+.contact:hover {
+  transform: rotate(2deg) scale(1.06);
+  transition: .1s;
+}
 .contact a{
   text-decoration: none;
-  position: absolute;
-  top: 500px;
-  left: 380px;
-  color:white;
-  width: 200px;
-  border-radius: 20px;
-  border: 1px solid #F76525;
-  text-align: center;
-  padding-top: 5px
 }
-
-.contact a h4{
-  font-weight: 400;
-}
-  
-.wave img{
-  position: relative;
-  top: -150px;
+.skills{
+  width: 100%;
 }
 
 .skills h3{
@@ -276,7 +283,7 @@ div.about_bar {
   border-top-right-radius: 20%;
 }
 
-div.projets_card{
+.projets_card{
   background-color: #2D2C32;
   height: 350px;
   border-bottom-left-radius: 10%;
@@ -598,7 +605,55 @@ circle{
   }
 }
 
+@media screen and (max-width: 1024px){
+  .miguel{
+    z-index: -1;
+    left: 45%;
+  }
+  .about_stack h2{
+    color: #212529
+  }
+  .about h1 {
+    font-size: 70px;
+  }
+  .about p {
+    font-size: 16px;
+  }
+  .about_bar{
+    width: 45%;
+  }  
+}
 @media screen and (max-width: 800px){
+  .lang_grid{
+    width: 100%;
+  }  
+  .contact {
+    position: absolute;
+    top: 490px;
+    left: 100px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #868490;
+    text-align: center;
+    top: 470px;
+    left: 50px; 
+  }
+  .about_locate {
+    position:relative;
+    top: -15px;
+  }
+  .about {
+    margin: 20px -40px;
+  }
+  .about_bar{
+    width: 60%;
+  }
+  .miguel{
+    transform: scale(0.8);
+    opacity: 0.8;
+    left: 25%;
+  }
   .menu_hamburguer{
     display: flex;
   }
