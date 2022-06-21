@@ -106,11 +106,14 @@ body{
 }
 .about p {
   width: 60%;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
   color: #FFFFFF;
 }
-
+.about_text a {
+  text-decoration: none;
+  color: #F76525;
+}
 .about_locate{
   font-size: 20px;
 }
@@ -139,7 +142,7 @@ i.fa-solid.fa-street-view {
 }
 .contact {
   position: absolute;
-  top: 410px;
+  top: 465px;
   left: 450px;
   width: 200px;
   height: 40px;
@@ -240,80 +243,59 @@ i.fa-solid.fa-street-view {
 .lang_ h5 {
   color: #F76525  ;
 }
-.projets_text {
-  top: -1100px;
-  position: relative;
-  text-align: center;
-}
-.projets_text span{
-  font-size: 16px;
-}
-.projets_text h3 {
-  color: white;
-  font-size: 40px;
-}
-.projets_text p {
-  width: 50%;
-  font-size: 16px;
-  margin: 0 auto;
-}
 .projets_grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  top: -1200px;
   width: 80%;
   margin: 0 auto;
-  gap: 20px;
-  position: relative;
-  top: -1055px;
+  justify-content: center;
 }
-
-.projets_grid img {
+.container_projects{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+.projets_card{
+  width: 250px;
+  height: 400px;
+  background-color: #2D2C32;
+  color: white;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 10%;
+}
+.projets_card img {
   width: 100%;
   border-top-right-radius: 20%;
 }
-
-.projets_card{
-  background-color: #2D2C32;
-  height: 350px;
-  border-bottom-left-radius: 10%;
-  border-top-right-radius: 20%;
+.projets_card_text{
+  margin: 20px;
 }
 
-.projets_card p {
+.projets_card_text p {
   font-size: 12px;
-  min-width: 100%;
-  position: relative;
-  top: -12px;
-}
-.projets_card_text{  
-  margin: 25px;
-  position: relative;
-  top: -15px;
-  height: 150px;
 }
 
-.projets_card h4 {
+.projets_card_text h4 {
   color: #F76525;
-  position: relative;
-  top: -16px;
-  font-size: 20px;
+}
+
+.projets_card_text a {
+  text-decoration: none;
+  color: #F76525;
 }
 
 .projet_date {
+  position: absolute;
   background-color: black;
-  position: relative;
-  top: -186px;
   font-size: 12px;
+  padding: 2px 5px;
   color: #F76525;
-  font-weight: 500;
-  padding: 4px 8px
 }
-.projets_card_text span{
-  color: #F76525;
-  font-size: 12px;
-  font-weight: 500;
-  position: relative;
-  top: -20px;  
+.projets_card img:hover{
+  transform: translate(-10px);
+  transition: .5s;
+  box-shadow: 10px 10px #F76525;
 }
 .services h3{
   position: relative;
@@ -609,9 +591,6 @@ circle{
   .about h1 {
     font-size: 70px;
   }
-  .about p {
-    font-size: 16px;
-  }
   .about_bar{
     width: 45%;
   }  
@@ -632,7 +611,10 @@ circle{
   top: -1420px;
   }
 /*///////////////////////////////////////////////////////////////////////////////////////////////////*/
-
+  .about p {
+    font-size: 12px;
+    width: 80%;
+  }
   .lang_grid{
     width: 100%;
   }  
@@ -695,4 +677,27 @@ circle{
     padding-left: 30px;
     height: auto;
   }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+  .grid{
+    width: 100%;
+    transform: scale(0.8);
+    top: -1450px;
+  }/* 
+  .projets_card {
+  max-width: 300px;
+  }
+  .projets_grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  } */
 }
