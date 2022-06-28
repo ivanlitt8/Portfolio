@@ -1,0 +1,15 @@
+<svg width="20" height="653" viewBox="0 0 20 653" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="10" cy="639" r="10" fill="#F76525"/>
+<circle cx="10" cy="515" r="10" fill="#F76525" fill-opacity="0.8"/>
+<path d="M20 406C20 411.523 15.5228 416 10 416C4.47715 416 0 411.523 0 406C0 400.477 4.47715 396 10 396C15.5228 396 20 400.477 20 406Z" fill="#F76525" fill-opacity="0.6"/>
+<circle cx="10" cy="292" r="10" fill="#F76525" fill-opacity="0.31"/>
+<path d="M20 181C20 186.523 15.5228 191 10 191C4.47715 191 0 186.523 0 181C0 175.477 4.47715 171 10 171C15.5228 171 20 175.477 20 181Z" fill="#F76525" fill-opacity="0.17"/>
+<path d="M20 40C20 45.5228 15.5228 50 10 50C4.47715 50 0 45.5228 0 40C0 34.4772 4.47715 30 10 30C15.5228 30 20 34.4772 20 40Z" fill="#F76525" fill-opacity="0.12"/>
+<path d="M7 0H13V653H7V0Z" fill="url(#paint0_linear_1_3)"/>
+<defs>
+<linearGradient id="paint0_linear_1_3" x1="10" y1="105.485" x2="10" y2="758.485" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F76525" stop-opacity="0.12"/>
+<stop offset="1" stop-color="#F76525"/>
+</linearGradient>
+</defs>
+</svg>

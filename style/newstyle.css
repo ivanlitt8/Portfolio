@@ -85,11 +85,11 @@ body{
 }
 .about{
   position: absolute;
-  max-width: 800px;
   font-family: 'DM Sans';
   padding-left: 100px;
   padding-top: 70px;
   margin: 50px 0px;
+  width: 100%;
 }
 .about_stack h2{
   font-size: 50px;
@@ -211,7 +211,10 @@ i.fa-solid.fa-street-view {
   color: white;
   text-align: center;
 }
-
+.lang{
+  position: relative;
+  top: 70px;
+}
 .lang_grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -243,6 +246,10 @@ i.fa-solid.fa-street-view {
 .lang_ h5 {
   color: #F76525  ;
 }
+.projets{
+  position: relative;
+  top: 80px;
+}
 .projets_grid{
   display: grid;
   position: relative;
@@ -251,10 +258,19 @@ i.fa-solid.fa-street-view {
   margin: 0 auto;
   justify-content: center;
 }
+
+.projets_text{
+  position: relative;
+  top: -1250px;
+  text-align: center;
+  margin: 20px;
+  color: white;
+}
 .container_projects{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 .projets_card{
   width: 250px;
@@ -267,6 +283,7 @@ i.fa-solid.fa-street-view {
 .projets_card img {
   width: 100%;
   border-top-right-radius: 20%;
+  height: 190px;
 }
 .projets_card_text{
   margin: 20px;
@@ -305,19 +322,23 @@ i.fa-solid.fa-street-view {
   color: white;
 }
 .services_grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 80%;
-  margin: 0 auto;
   gap: 20px;
   position: relative;
   top: -900px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
 }
 .service{
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  align-items: center;
   background-color: #2D2C32;
   border-radius: 20px;
   height: 300px;
-  text-align: center;
   padding: 40px 0;
 }
 .service:hover{
@@ -337,50 +358,48 @@ i.fa-solid.fa-street-view {
 .service p{
   padding-top: 10px;
   color: white;
-  width: 100%;
+  width: 70%;
   font-size: 16px;
 }
 .education h3{
   position: relative;
   top: -750px;
   font-size: 60px;
+  text-align: left;
   color: white;
   margin-left: 10%;
-}
-.education_grid{
-  display: grid;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px;
 }
 .education_grid img{
   width: 100px;
   height: auto;
 }
 .educations{
-  display: grid;
   position: relative;
   top: -700px;
-  align-items: center;
-  grid-template-columns: 25% 65%;
-  color: #F76525;
+  display: grid;
+  grid-template-columns: 20% auto;
+  gap: 20px;
   width: 70%;
   margin: 0 auto;
+  align-items: center;
+  height: 130px;
+}
+.educations_text{
+  text-align: left;
+  color: white;
+}
+.educations_text h4{
+  color: #F76525;
+  font-size: 1.5em;
 }
 .education_data{
+  width: 100%;
   display: flex;
-  padding-top: 8px;
+  flex-direction: row;
   justify-content: space-between;
 }
-.education_data span{
-  font-weight: 400;
-}
-
-.educations h4{
-  font-size: 20px;
-}
-.line{
-  position:absolute;
-  top: 3125px;
-  left: 10%;
+.educations img{
+  margin: 0 auto;
 }
 .experience h3{
   position: relative;
@@ -390,18 +409,21 @@ i.fa-solid.fa-street-view {
   margin-left: 10%;
 }
 .experience_grid{
-  display: grid;
-  width: 80%;
   margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  position: relative;
   top: -600px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
 }
-
 .experience_card {
   background-color: #282D29;
   padding: 25px;
+  width: 330px;
+  color: white;
 }
 .experience_card:hover {
   transition: .5s;
@@ -596,7 +618,6 @@ circle{
   }  
 }
 @media screen and (max-width: 800px){
-  /*//////////////////////////////////////////REVISAR ESTO///////////////////////////////////////*/
   .grid{
     width: 100%;
     transform: scale(0.8);
@@ -610,10 +631,13 @@ circle{
   font-size: 50px;
   top: -1420px;
   }
-/*///////////////////////////////////////////////////////////////////////////////////////////////////*/
   .about p {
     font-size: 12px;
     width: 80%;
+  }
+  .lang{
+    position: relative;
+    top: 60px;
   }
   .lang_grid{
     width: 100%;
@@ -678,26 +702,30 @@ circle{
     height: auto;
   }
 }
-
-
-
-
-
-
-
-
-@media screen and (max-width: 800px){
-  .grid{
-    width: 100%;
-    transform: scale(0.8);
-    top: -1450px;
-  }/* 
-  .projets_card {
-  max-width: 300px;
+@media screen and (max-width: 650px){
+  .container_projects{
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
-  .projets_grid {
-    width: 50%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  } */
+  .projets_card{
+    display: flex;
+    width: 100%;
+    height: 190px;
+    border-radius: 10px;
+  }
+  .projets_card img {
+    border-radius: 0px;
+    min-width: 200px;
+  }
+  .projets_card p{
+    font-size: 11px;
+    height: 90px;
+  }
+  .projets_card h4 {
+    font-size: 20px;    
+  }
+  .projets_card a span {
+    font-size: 14px;
+    float: right;
+  }
 }
