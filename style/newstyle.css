@@ -701,6 +701,18 @@ circle{
     padding-left: 30px;
     height: auto;
   }
+  .education_data span{
+    font-size: 14px;
+  }
+  .educations_text h4{
+    font-size: 18px;
+  }
+  .educations img{
+    width: 75px;
+  }
+  .educations{
+    gap: 30px;
+  }
 }
 @media screen and (max-width: 650px){
   .container_projects{
